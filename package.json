@@ -1,18 +1,17 @@
 {
   "name": "travel-emergency-assist",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Travel Emergency Assist Application",
+  "main": "frontend/backend/B1.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node frontend/backend/B1.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Abhishek Yadav",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^5.2.1"
-  },
-  "devDependencies": {}
+  }
 }
