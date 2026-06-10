@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Emergency History</title>
+    <link rel="stylesheet" href="history.css">
+</head>
+
+<body class="history-page">
+
+    <h1 class="title">
+        📜 Emergency History
+    </h1>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search emergency..."
+        onkeyup="searchHistory()"
+    >
+
+    <div
+        id="historyContainer"
+        class="container">
+    </div>
+
+    <br>
+
+    <!-- Clear All Button -->
+
+    <button onclick="clearHistory()">
+
+        🗑 Clear All History
+
+    </button>
+
+    <br><br>
+
+    <a href="index.html">
+
+        <button>
+            ⬅ Back to Home
+        </button>
+
+    </a>
+
+    <script src="history.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body.history-page {
+    background: linear-gradient(135deg, #f8f9fa, #ffe6ef);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff4b7d;
+    margin-bottom: 20px;
+    text-shadow: 0 3px 10px rgba(255, 75, 125, 0.2);
+}
+
+/* =========================
+   SEARCH BOX
+========================= */
+
+#searchInput {
+    display: block;
+    margin: 0 auto 30px auto;
+    width: 320px;
+    max-width: 90%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #ff4b7d;
+    border-radius: 12px;
+    outline: none;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+#searchInput:focus {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(255, 75, 125, 0.25);
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* =========================
+   CARD DESIGN
+========================= */
+
+.card {
+    width: 300px;
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
+    border-left: 5px solid #ff4b7d;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   CARD TEXT
+========================= */
+
+.card h3 {
+    font-size: 20px;
+    color: #ff4b7d;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 6px 0;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    margin-top: 12px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* VIEW MAP BUTTON */
+button:nth-of-type(1) {
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    color: white;
+}
+
+/* DELETE BUTTON */
+button:nth-of-type(2) {
+    background: linear-gradient(45deg, #ff4b4b, #ff6b6b);
+    color: white;
+    margin-left: 10px;
+}
+
+/* HOVER */
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* =========================
+   EMPTY MESSAGE
+========================= */
+
+.container p {
+    font-size: 18px;
+    color: gray;
+    margin-top: 40px;
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+a button {
+    display: block;
+    margin: 40px auto 0 auto;
+    background: linear-gradient(45deg, #333, #666);
+    color: white;
+    padding: 12px 18px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .title {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    #searchInput {
+        width: 90%;
+    }
+}

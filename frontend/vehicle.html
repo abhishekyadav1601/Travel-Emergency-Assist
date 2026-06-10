@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vehicle Breakdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>🚗 Vehicle Breakdown Help</h1>
+
+    <p>Find nearby mechanics and roadside assistance.</p>
+
+    <button onclick="getLocation()">
+        📍 Find My Location
+    </button>
+
+    <div id="location"></div>
+
+    <br>
+
+    <h2>Nearby Vehicle Mechanics Map</h2>
+
+    <iframe
+        width="100%"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        src="https://www.google.com/maps?q=mechanic+near+me&output=embed">
+    </iframe>
+
+    <br><br>
+
+    <button onclick="saveEmergency('Vehicle')">
+        🚨 Need Help
+    </button>
+
+    <button onclick="openNearby('mechanic')">
+        🔧 Vehicle Repair
+    </button>
+
+    <br><br>
+
+    <a href="index.html">
+        <button>⬅ Back</button>
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

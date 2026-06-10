@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Emergency Assist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">Loading...</div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            Travel Emergency Assist
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#emergency">Emergency</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="history.html">History</a></li>
+        </ul>
+
+        <button onclick="toggleDarkMode()" class="dark-btn">
+            🌙
+        </button>
+
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <h1>Travel Emergency Assist</h1>
+
+        <p>Help Anytime, Anywhere</p>
+
+        <button class="help-btn"
+            onclick="location.href='#emergency'">
+
+            Get Help
+
+        </button>
+
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services reveal" id="services">
+
+        <h2>Emergency Services</h2>
+
+        <div class="service-container">
+
+            <div class="card"
+                onclick="location.href='medical.html'">
+
+                <h3>🚑 Medical Help</h3>
+
+                <p>Find nearest hospitals instantly</p>
+
+            </div>
+
+            <div class="card"
+                onclick="location.href='vehicle.html'">
+
+                <h3>🚗 Vehicle Breakdown</h3>
+
+                <p>Get mechanic support nearby</p>
+
+            </div>
+
+            <div class="card"
+                onclick="location.href='food.html'">
+
+                <h3>🍔 Food</h3>
+
+                <p>Locate restaurants nearby</p>
+
+            </div>
+
+            <div class="card"
+                onclick="location.href='stay.html'">
+
+                <h3>🏨 Stay</h3>
+
+                <p>Find hotels and safe places</p>
+
+            </div>
+
+            <div class="card"
+                onclick="location.href='petrol.html'">
+
+                <h3>⛽ Petrol Pump</h3>
+
+                <p>Find nearby petrol pumps</p>
+
+            </div>
+
+            <div class="card"
+                onclick="location.href='atm.html'">
+
+                <h3>💳 ATM Finder</h3>
+
+                <p>Find nearby ATM machines</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EMERGENCY -->
+    <section class="emergency-options reveal"
+        id="emergency">
+
+        <h2>Select Emergency</h2>
+
+        <div class="options-container">
+
+            <button onclick="handleEmergency('hospital')">
+                🚑 Medical
+            </button>
+
+            <button onclick="handleEmergency('mechanic')">
+                🚗 Vehicle
+            </button>
+
+            <button onclick="handleEmergency('restaurant')">
+                🍔 Food
+            </button>
+
+            <button onclick="handleEmergency('hotel')">
+                🏨 Stay
+            </button>
+
+            <button onclick="handleEmergency('petrol pump')">
+                ⛽ Petrol
+            </button>
+
+            <button onclick="handleEmergency('ATM')">
+                💳 ATM
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="steps reveal">
+
+        <h2>How It Works</h2>
+
+        <div class="step-container">
+
+            <div class="step">
+                1️⃣
+                <p>Detect Your Location</p>
+            </div>
+
+            <div class="step">
+                2️⃣
+                <p>Select Emergency Type</p>
+            </div>
+
+            <div class="step">
+                3️⃣
+                <p>Get Instant Help</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contacts reveal"
+        id="contact">
+
+        <h2>Emergency Contacts</h2>
+
+        <div class="contact-container">
+
+            <div class="contact-card">
+                📞
+                <h3>Police</h3>
+                <p><a href="tel:100">100</a></p>
+            </div>
+
+            <div class="contact-card">
+                🚑
+                <h3>Ambulance</h3>
+                <p><a href="tel:102">102</a></p>
+            </div>
+
+            <div class="contact-card">
+                🚒
+                <h3>Fire</h3>
+                <p><a href="tel:101">101</a></p>
+            </div>
+
+            <div class="contact-card">
+                🚨
+                <h3>Emergency</h3>
+                <p><a href="tel:112">112</a></p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SOS -->
+    <section class="sos reveal">
+
+        <h2>Emergency SOS</h2>
+
+        <p>If you are in danger, press SOS.</p>
+
+        <button class="sos-btn"
+            onclick="callEmergency()">
+
+            🚨 SOS HELP
+
+        </button>
+
+        <br><br>
+
+        <button onclick="getLocation()">
+
+            📍 Get My Location
+
+        </button>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Travel Emergency Assist |
+            Stay Safe
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

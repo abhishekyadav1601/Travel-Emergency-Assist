@@ -1,0 +1,412 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+/* BODY */
+
+body{
+background:#fafafa;
+color:#222;
+line-height:1.5;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("image/slider.png");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+color:white;
+text-align:center;
+
+animation:heroSlide 12s infinite;
+padding:20px;
+}
+
+@keyframes heroSlide{
+
+0%{
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("image/slider.png");
+background-size:cover;
+}
+
+33%{
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("https://img.freepik.com/premium-photo/indian-dark-road-vector-scene-cartoon-background_787927-1308.jpg?w=360");
+background-size:cover;
+}
+
+66%{
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("https://png.pngtree.com/background/20230517/original/pngtree-neon-street-on-a-busy-street-with-buildings-in-the-background-picture-image_2637563.jpg");
+background-size:cover;
+}
+
+100%{
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("https://i.pinimg.com/736x/e7/dd/0b/e7dd0b2e05e481ac49ac7498a8277794.jpg");
+background-size:cover;
+}
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:25px;
+max-width:700px;
+}
+
+/* BUTTON */
+
+.help-btn{
+padding:14px 35px;
+font-size:18px;
+background:#ff4b7d;
+border:none;
+color:white;
+cursor:pointer;
+border-radius:10px;
+transition:.3s;
+box-shadow:0 0 15px rgba(255,75,125,.5);
+}
+
+.help-btn:hover{
+transform:translateY(-4px) scale(1.05);
+box-shadow:0 0 25px rgba(255,75,125,.7);
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+position:fixed;
+width:100%;
+top:0;
+background:rgba(0,0,0,.65);
+backdrop-filter:blur(10px);
+color:white;
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-size:18px;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#ff4b7d;
+}
+
+/* SECTIONS */
+
+.services,
+.contacts{
+padding:80px 20px;
+text-align:center;
+}
+
+.service-container,
+.contact-container{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+/* CARD */
+
+.card{
+width:230px;
+padding:25px;
+background:#181818;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.35);
+transition:.3s;
+color:white;
+}
+
+.card h3{
+font-size:20px;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:14px;
+color:#cfcfcf;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.04);
+background:#282828;
+box-shadow:0 18px 35px rgba(0,0,0,.5);
+}
+
+/* STEPS */
+
+.steps{
+background:#f4f4f4;
+padding:80px 20px;
+text-align:center;
+}
+
+.step-container{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+.step{
+font-size:22px;
+font-weight:bold;
+}
+
+/* EMERGENCY */
+
+.emergency-options{
+padding:80px 20px;
+text-align:center;
+background:linear-gradient(135deg,#fff0f5,#ffe6ec);
+border-radius:20px;
+margin:50px 20px;
+box-shadow:0 15px 40px rgba(255,75,125,.15);
+}
+
+#emergency h2{
+font-size:38px;
+color:#ff4b7d;
+margin-bottom:25px;
+}
+
+.options-container{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.options-container button{
+padding:15px 28px;
+font-size:18px;
+background:linear-gradient(45deg,#ff4b7d,#ff6f91);
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 5px 15px rgba(255,75,125,.35);
+}
+
+.options-container button:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(255,75,125,.5);
+}
+
+/* SOS */
+
+.sos{
+padding:80px 20px;
+text-align:center;
+background:#ffe6e6;
+}
+
+.sos-btn{
+padding:20px 40px;
+font-size:22px;
+background:red;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 5px 20px rgba(255,0,0,.35);
+}
+
+.sos-btn:hover{
+transform:scale(1.05);
+background:#d31313;
+}
+
+/* CONTACT */
+
+.contact-card{
+background:white;
+width:220px;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+font-size:20px;
+transition:.3s;
+}
+
+.contact-card:hover{
+transform:translateY(-8px);
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* DARK MODE */
+
+.dark-btn{
+background:#ff4b7d;
+border:none;
+padding:8px 12px;
+border-radius:6px;
+font-size:18px;
+cursor:pointer;
+color:white;
+}
+
+.dark-mode{
+background:#1a1a1a;
+color:white;
+}
+
+.dark-mode .card{
+background:#222;
+}
+
+.dark-mode .emergency-options{
+background:#1f1f1f;
+}
+
+/* LOADER */
+
+#loader{
+position:fixed;
+width:100%;
+height:100vh;
+background:white;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+z-index:9999;
+}
+
+/* REVEAL */
+
+.reveal{
+transform:translateY(100px);
+opacity:0;
+transition:.8s;
+}
+
+.reveal.active{
+transform:translateY(0);
+opacity:1;
+}
+
+/* TABLE */
+
+table{
+width:85%;
+margin:auto;
+border-collapse:collapse;
+background:white;
+border-radius:10px;
+overflow:hidden;
+}
+
+th,td{
+padding:12px;
+text-align:center;
+}
+
+tr{
+transition:.3s;
+}
+
+tr:hover{
+background:#ffe6e6;
+transform:scale(1.01);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+padding:15px;
+}
+
+.nav-links{
+flex-direction:column;
+margin-top:10px;
+gap:12px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.options-container button{
+width:90%;
+}
+
+.card,
+.contact-card{
+width:90%;
+}
+
+.step-container{
+flex-direction:column;
+}
+}

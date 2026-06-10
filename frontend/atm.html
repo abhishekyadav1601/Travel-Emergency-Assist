@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nearby ATM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>💳 Nearby ATM</h1>
+
+    <p>Find ATM machines near your location.</p>
+
+    <button onclick="getLocation()">
+        📍 Find My Location
+    </button>
+
+    <button onclick="saveEmergency('ATM')">
+        💳 Find ATM
+    </button>
+
+    <br><br>
+
+    <div id="location"></div>
+
+    <br>
+
+    <h2>Nearby ATM Map</h2>
+
+    <iframe
+        width="100%"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        src="https://www.google.com/maps?q=atm+near+me&output=embed">
+    </iframe>
+
+    <br><br>
+
+    <button onclick="openNearby('ATM')">
+        🏧 Nearby ATM
+    </button>
+
+    <br><br>
+
+    <a href="index.html">
+        <button>⬅ Back</button>
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

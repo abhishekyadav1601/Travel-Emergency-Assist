@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nearby Petrol Pumps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>⛽ Nearby Petrol Pumps</h1>
+
+    <p>Find petrol pumps near your location.</p>
+
+    <button onclick="getLocation()">
+        📍 Find My Location
+    </button>
+
+    <button onclick="saveEmergency('Petrol Pump')">
+        ⛽ Find Petrol Pump
+    </button>
+
+    <br><br>
+
+    <div id="location"></div>
+
+    <br>
+
+    <h2>Petrol Pumps Map</h2>
+
+    <iframe
+        width="100%"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        src="https://www.google.com/maps?q=petrol+pump+near+me&output=embed">
+    </iframe>
+
+    <br><br>
+
+    <button onclick="openNearby('petrol pump')">
+        ⛽ Nearby Petrol Pump
+    </button>
+
+    <br><br>
+
+    <a href="index.html">
+        <button>⬅ Back</button>
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

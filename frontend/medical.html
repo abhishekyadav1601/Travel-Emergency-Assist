@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Medical Emergency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Medical Emergency</h1>
+
+    <p>Find nearby hospitals and medical help.</p>
+
+    <button onclick="getLocation()">
+        📍 Find Nearby Hospitals
+    </button>
+
+    <div id="location"></div>
+
+    <h2>Nearby Hospitals Map</h2>
+
+    <iframe
+        width="100%"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        src="https://www.google.com/maps?q=hospitals+near+me&output=embed">
+    </iframe>
+
+    <br><br>
+
+    <button onclick="saveEmergency('Hospital')">
+        Need Medical Help
+    </button>
+
+    <button onclick="openNearby('hospital')">
+        🏥 Nearby Hospital
+    </button>
+
+    <br><br>
+
+    <a href="index.html">
+        <button>⬅ Back</button>
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
