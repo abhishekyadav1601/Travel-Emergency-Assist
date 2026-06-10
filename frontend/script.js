@@ -78,7 +78,7 @@ function handleEmergency(type) {
 
             const response =
                 await fetch(
-                    "http://localhost:5000/emergency",
+                    "https://travel-emergency-assist.onrender.com/emergency",
                     {
                         method: "POST",
 
@@ -113,50 +113,6 @@ function handleEmergency(type) {
             alert(
                 "❌ Server not connected"
             );
-        }
-    });
-}
-
-
-// =======================
-// SEND LOCATION ONLY
-// =======================
-
-function sendLocationToBackend() {
-
-    getCurrentLocation(async (lat, lon) => {
-
-        try {
-
-            const response =
-                await fetch(
-                    "http://localhost:5000/location",
-                    {
-                        method: "POST",
-
-                        headers: {
-                            "Content-Type":
-                                "application/json"
-                        },
-
-                        body: JSON.stringify({
-                            latitude: lat,
-                            longitude: lon
-                        })
-                    }
-                );
-
-            const data =
-                await response.json();
-
-            console.log(
-                "Location Saved:",
-                data
-            );
-
-        } catch (error) {
-
-            console.log(error);
         }
     });
 }
